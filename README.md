@@ -16,7 +16,7 @@ Those lovely tools of contemporary web development:
 
 **[`⚛️ React`](https://reactjs.org/)** for sure!!!
 
-**[`💅 Styled Components`](https://www.styled-components.com/)** for swag!
+**[`🔭 Astroturf`](https://github.com/4Catalyzer/astroturf)** for style!
 
 **[`🚗 React Router`](https://reactjs.org/)** for traffic!
 
@@ -32,9 +32,6 @@ To create an app, run:
 
 ```sh
 npm init @gnarlycode/gnarly-app app-name
-# wait... choose
-
-cd app-name
 ```
 
 ## COMMANDS?
@@ -53,15 +50,17 @@ cd app-name
 
 ```
 📁 app-name
+├── 📄 .browserlist
+├── 📄 .editorconfig
+├── 📄 .eslintignore
+├── 📄 .eslintrc.js
+├── 📄 .gitignore
+├── 📄 .prettierignore
+├── 📄 .prettierrc
 ├── 📄 gnarly.config.js
 ├── 📄 package.json
 ├── 📄 README.md
 ├── 📄 tsconfig.json
-├── 📄 tslint.json
-├── 📄 .gitignore
-├── 📄 .editorconfig
-├── 📄 .prettierignore
-├── 📄 .prettierrc
 │
 ├── 📁 src
 │   ├── 📄 config.ts
@@ -74,11 +73,16 @@ cd app-name
 │   │   ├── 📄 client.tsx
 │   │   └── 📄 server.tsx
 │   │
+│   ├── 📁 styles
+│   │   ├── 📄 globalStyles.ts
+│   │   └── 📄 styleVars.json
+│   │
+│   ├── 📁 types
+│   │   └── 📄 svg.d.ts
+│   │
 │   └── 📁 utils
-│       ├── 📄 defaultStyles.tsx
 │       ├── 📄 index.ts
-│       ├── 📄 links.ts
-│       └── 📄 styles.ts
+│       └── 📄 links.ts
 │
 └── 📁 static
     └── 📄 favicon.ico
@@ -100,12 +104,6 @@ module.exports = {
 
   // Serve static with express (do not enable if static served with nginx for example)
   serveStatic: true,
-
-  // Add babel transform runtime
-  babelRuntime: true,
-
-  // Browsers list
-  browsers: ['last 2 versions', '>= 1%'],
 }
 ```
 
@@ -117,9 +115,6 @@ module.exports = {
 
 ## CREDITS 🙏
 
-[`@gnarlycode/react-route-fetch`](https://github.com/gnarlycode/react-components/tree/master/packages/react-route-fetch)
-[`@gnarlycode/react-scroll-state`](https://github.com/gnarlycode/react-components/tree/master/packages/react-scroll-state)
-[`awesome-typescript-loader`](https://github.com/s-panferov/awesome-typescript-loader)
 [`babel`](https://babeljs.io/)
 [`commander`](https://github.com/tj/commander.js)
 [`dotenv-webpack`](https://github.com/mrsteele/dotenv-webpack)
@@ -131,9 +126,9 @@ module.exports = {
 [`react-router`](https://reactjs.org/)
 [`react`](https://reactjs.org/)
 [`redux`](https://redux.js.org/)
-[`styled-components`](https://www.styled-components.com/)
-[`svg-react-loader`](https://github.com/jhamlet/svg-react-loader)
-[`tslint`](https://palantir.github.io/tslint/)
+[`astroturf`](https://github.com/4Catalyzer/astroturf)
+[`svg-sprite-loader`](https://github.com/JetBrains/svg-sprite-loader)
+[`eslint`](https://eslint.org/)
 [`typescript`](https://www.typescriptlang.org)
 [`webpack-hot-server-middleware`](https://www.npmjs.com/package/webpack-hot-server-middleware)
 [`webpack`](https://webpack.js.org/)
